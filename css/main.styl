@@ -1,0 +1,810 @@
+@import "style.styl"
+
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+
+article,
+aside,
+details, /* 1 */
+figcaption,
+figure,
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+
+
+.titles
+	font-family "Quicksand"
+	font-size 4em
+	font-weight normal
+	margin 0px
+	padding 0px
+	
+.texts
+	font-family "Open sans"
+	font-size 2em
+	font-weight lighter
+	margin 0px
+	padding 0px
+	
+	
+.headSection
+	display flex
+	align-items center
+	justify-content space-around
+	height 140px
+	
+	span
+		font-size 4em
+		color #95989A
+				
+body
+	border none
+	width 100%
+	background-color none
+	margin 0px
+	padding 0px
+	
+	header
+		width 100%
+		margin 0px
+		padding 0px
+		height 92px
+		position fixed
+		top 0px
+		z-index 9999
+		background-color white
+		
+		.navHeader
+			display flex
+			height 92px
+			flex-wrap nowrap
+			justify-content space-between
+			width 100%
+			align-items center
+			
+			.ico-menu
+				font-size 3em
+				margin 0px 0px 0px 40px
+				cursor pointer
+			
+			figure
+				width 250px
+				height 40px
+				img
+					width 100%
+					
+			.wrapperSocialNetworks
+				margin 0px 40px 0px 0px
+				a 
+					text-decoration none
+					margin 0px 10px
+					span
+						font-size 2em
+						color black
+					
+		.navDisplay
+			display none
+			width 100%
+			background-color white
+			
+			div
+				display flex
+				justify-content center
+				width 90%
+				flex-wrap wrap
+				margin 0px auto
+				border-bottom solid 1px #95989A
+				
+				p
+					width 100%
+					text-align center
+					color #95989A
+					cursor pointer
+				
+			form
+				display flex
+				width 90%
+				height 100px
+				margin 0px auto
+				flex-flow row wrap
+				justify-content center
+				
+				p
+					width 100%
+					text-align center
+					color #B1B1B1
+				
+				.inputTxt
+					text-align center
+					border solid 2px #95989A
+					
+				.inputBtn
+					background-color #E5E5E5
+					color #95989A
+					text-align center
+					width 120px
+					border none
+					padding-top 2px
+				
+	.banner
+		background-image url("img/BannerHome.png")
+		background-repeat no-repeat
+		background-size cover
+		background-position 64% 0px
+		width 100%
+		height 514px
+		margin 60px 0px 0px 0px		
+			
+
+	.sectionCollections
+		position relative
+			
+		.collectionList
+			display none
+			ul
+				display block
+				width 100%
+				list-style none
+				margin 0px
+				padding 20px 0px
+				li
+					width 100%
+					a
+						display block
+						text-decoration none
+						font-family "Open sans"
+						font-size 2em
+						font-weight lighter
+						color #95989A
+						text-align center
+						margin 10px auto
+						padding 0px
+						width 100%
+						
+				.collectionSelected
+					a
+						color black
+					a:before
+						content:"·"
+						color black
+						position relative
+						right 10px
+						
+		.gallery
+			position relative
+			height 510px
+			.galleryGrid
+				display flex
+				justify-content center
+				width 100%
+				position absolute
+				top 0px
+				z-index 4
+				
+				.wrapperImage
+					width 32%
+					
+					figure
+						display block
+						margin 0px
+						padding 0px
+						width 100%
+						img
+							width 100%
+						
+			.galleryGridSelected
+				z-index 5
+				
+		.icoImage
+			display none
+			font-size 3em
+			color #95989A
+			background-color white
+			height 80px
+			width 80px
+			line-height 80px
+			text-align center
+			border solid 1px red
+			border-radius 50%
+			position absolute
+			bottom 230px
+			right 30px
+			
+			
+				
+	.sectionLifestyle
+		.carrusel
+			margin 0px 0px 20px 0px
+			display flex
+			flex-wrap wrap
+			justify-content space-around
+			align-content space-around 
+			
+			.thumb
+				width 47%
+				margin 10px 0px
+				padding 0px
+				
+				img
+					width 100%
+			
+	.sectionAboutus
+		margin 100px 0px 0px 0px
+		.wrapperImg
+			figure
+				display block
+				margin 0px 
+				padding 0px
+				
+				img
+					width 100%
+		.wrapperText
+			width 95%
+			margin 70px auto 0px auto
+			
+			p
+				text-align center
+	.sectionContactus
+		margin 70px 0px 0px 0px
+		
+		.wrapperImgInfo
+			display flex
+			width 100%
+			flex-wrap wrap
+			justify-content space-around
+			
+
+			.imgContact
+				width 48%
+				margin 0px 
+				padding 0px
+				img
+					width 100%
+			.imgContact1
+				order 1
+			.imgContact2
+				order 2
+			.wrapperInfo
+				width 100%
+				order 3
+				margin 50px 0px
+				text-align center
+			
+				.underline
+					width 40%
+					border-bottom solid 1px #E0E0E0	
+					margin 50px auto
+					
+				p
+					font-size 1.8em
+					font-family "open sans"
+				ul
+					list-style none
+					li
+						font-size 1.8em
+						
+
+@media screen and (min-width: 1200px)
+
+	.headSection
+		width 100%
+		justify-content flex-start
+		
+		h4
+			font-size 3em
+			margin-left 30px
+
+	body 
+		header
+			height 50px
+			.navHeader
+				height 50px
+				.ico-menu
+					font-size 1.5em
+				figure
+					height auto
+					width 150px
+					margin-top 20px
+					
+				.wrapperSocialNetworks a span
+					font-size 1em
+			.navDisplay
+				div
+					justify-content space-between
+					flex-wrap nowrap
+					width 700px
+					p
+						font-size 0.9em
+						font-weight lighter
+						width auto
+						padding 50px 0px
+						
+				form
+					padding 25px 0px
+
+		.banner
+			margin 50px 0px 0px 0px
+			
+		.sectionCollections
+			display flex
+			flex-wrap wrap
+			justify-content space-around
+			width 1200px
+			margin 0px auto
+			.headSection
+				span
+					display none
+					
+			.collectionList
+				width 200px
+				display block
+				ul
+					padding 0px
+					width 200px
+					li a
+						font-size 0.8em
+						text-align left
+			.gallery
+				width 900px
+		
+		.sectionLifestyle .carrusel .thumb 
+			width 30%
+					
+		.sectionAboutus
+			width 1150px
+			margin 100px auto 0px auto
+			display flex
+			justify-content space-around
+			.wrapperImg
+				width 700px
+				
+				figure
+					width 650px
+					margin 0px auto
+			.wrapperText
+				width 250px
+				.texts
+					font-size 1em
+					
+		.sectionContactus
+			.headSection
+				justify-content center
+				h4
+					margin 0px
+					
+			.wrapperImgInfo
+				.imgContact, .wrapperInfo
+					width 25%
+					
+				.imgContact2
+					order 3
+				.wrapperInfo
+					order 2
+					
+					p, ul li
+						font-size 0.9em
+						line-height 25px
+						
+					ul
+						margin 0px
+						padding 0px
+
+					.underline
+						width 60%
+						margin 30px auto
+						
+			
+			
+					
+
