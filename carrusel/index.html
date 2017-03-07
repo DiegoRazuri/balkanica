@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+<head> 
+    
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<link rel="stylesheet" href="css/navegacion.css">
+-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <!-- ESTILOS DEL BANNER--> 
+    
+
+
+
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		a {
+			color: #09f;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		#back_to_camera {
+			clear: both;
+			display: block;
+			height: 80px;
+			line-height: 40px;
+			padding: 20px;
+		}
+		.fluid_container {
+			margin: 0px;
+			max-width: 1130px;
+			width: 100%;
+		}
+	</style>
+
+    <!--  SCRIPT DE MODERNIZR-- >
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <!--JS DEL BANNER--> 
+    
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+
+    <script src="js/vendor/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/vendor/underscore.js"></script>
+
+
+    <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='js/camera.min.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_1').camera({
+				thumbnails: true,
+                height: '31%',
+                time: '5000',
+                navigation: false,
+                navigationHover: false,
+			});
+
+		});
+	</script>
+ 
+</head>
+<body>
+    <div class="wrpMargenes">
+
+        <header>
+            <figure>
+                <a href="http://www.geosystemsperu.com/index.html">
+                    <img src="img/LogotipoGeo.png">
+                </a>
+            </figure>
+            <div class="telfContact">
+                <p>Central: +51(1)315 2910</p>
+                <figure><img src="img/banderaperu.png"></figure>
+                <input style="display:none;" type="text" placeholder="Encuentra...">
+                <button style="display:none;"> <span class="icon-search"></span> </button>
+                <a class="btnContactenos" href="http://www.geosystemsperu.com/contactenos/contactenos.html">Contáctenos</a>
+            </div>
+            <span class="icon-bars icoMenu"></span>
+            <nav>
+                <ul>
+                    <li class="btnNavPrincipal actHover0" id="btnNosotros">
+                        <a href="http://www.geosystemsperu.com/nosotros/nosotros.php">
+                            <p>Nosotros</p>
+                            
+                        </a>
+                    </li>
+                    <li class="btnNavPrincipal actHover1" id="btnProductos">
+                        <a href="http://www.geosystemsperu.com/productos/productos.html">
+                            <p>Productos</p>
+                        </a>
+                    </li>
+                    <li class="btnNavPrincipal actHover2" id="btnServicios">
+                        <a href="http://www.geosystemsperu.com/servicios/servicio.html">
+                            <p>Servicios</p><!--
+                            <img src="img/FlechaAbajo-01.png" class="icoFlecha2">
+                            <img src="img/FlechaAbajo-02.png" class="icoFlechaSelect2">-->
+                        </a>
+                        <!--<ul id="subNavServicios">
+                            <li class="botonesS"><a href="#">SERVICIO TÉCNICO</a></li>
+                            <li class="botonesS"><a href="#">GARANTÍAS</a></li>
+                            <li class="botonesS"><a href="#">ALQUILERES</a></li>
+                            <li class="botonesSx"><a href="#">SERVICIOS DE TOPOGRAFÍA</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="btnNavPrincipal actHover3" id="btnSoluciones">
+                        <a href="#">
+                            <p>Soluciones</p>
+                            <img src="img/FlechaAbajo-01.png" class="icoFlecha3">
+                            <img src="img/FlechaAbajo-02.png" class="icoFlechaSelect3">
+                        </a>
+                        <ul id="subNavSoluciones">
+                    <!--
+                            <li class="botonesS"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=1">MAPPING</a></li>
+                            <li class="botonesS"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=5">MONITOREO</a></li>
+                            <li class="botonesS"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=4">ARQUITECTURA</a></li>
+                            <li class="botonesS"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=3">CONSTRUCCIÓN</a></li>
+                            <li class="botonesSx"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=2">AGRICULTURA</a></li>
+                        -->
+                        </ul>
+                    </li>
+                    <li class="btnNavPrincipal actHover4" id="btnSoporte">
+                        <a href="http://www.geosystemsperu.com/soporte/soporte.html">
+                            <p>Soporte</p>
+                            <!--<img src="img/FlechaAbajo-01.png" class="icoFlecha4">
+                            <img src="img/FlechaAbajo-02.png" class="icoFlechaSelect4">-->
+                        </a>
+                        <!--<ul id="subNavSoporte">
+                            <li class="botonesS"><a href="#">MANUALES Y GUÍAS</a></li>
+                            <li class="botonesSx"><a href="#">ZONA DE DESCARGAS</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="btnNavPrincipal actHover5" id="btnContacto">
+                        <a href="http://www.geosystemsperu.com/novedades/novedades.html">
+                            <p>Novedades</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+        	<div class="fluid_container">
+            	
+                <div class="camera_wrap camera_azure_skin" id="camera_wrap_1">
+                    <div data-thumb="images/slides/thumbs/geosystem-slide1preview.jpg" data-src="images/slides/geosystem-slide1.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>SISTEMA DE<br>IMÁGENES ESPACIALES</h1>
+                            <h2>El TRIMBLE® MX2 sirve para la adquisición de imágenes y recopilación de nubes de puntos de datos espaciales geo-referenciados.</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=3">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystem-slide2preview.jpg" data-src="images/slides/geosystem-slide2.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>SISTEMA<br>TRIMBLE® R10 GNSS</h1>
+                            <h2>El Trimble R10 es el sistema GNSS actual más inteligente del mercado.</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=2">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystems-slide3preview.jpg" data-src="images/slides/geosystem-slide3.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>TRIMBLE® UX5<br>AERIAL IMAGING SOLUTION</h1>
+                            <h2>Los sistemas aéreos no tripulados para la cartografía por fotogrametría aérea es una herramienta revolucionaria.</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=3">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystems-slide4preview.jpg" data-src="images/slides/geosystem-slide4.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>TRIMBLE® V10<br>IMAGING ROVER</h1>
+                            <h2>Es un sistema con cámara integrada que captura imágenes panorámicas digitales de 360 grados</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=3">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystems-slide5preview.jpg" data-src="images/slides/geosystem-slide5.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>SPECTRA PRECISION LASER®</h1>
+                            <h2>Un láser autonivelante y automático que establece un nuevo estándar en fiabilidad y resistencia para la construcción</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=3">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystems-slide6preview.jpg" data-src="images/slides/geosystem-slide6.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>NIVEL DIGITAL<br>TRIMBLE® DiNi®</h1>
+                            <h2>Es un sensor digital para la medición de alturas que forma parte del conjunto de productos Trimble’s Integrated Surveying™.</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=3">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystem-slide7preview.jpg" data-src="images/slides/geosystem-slide7.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>ESTACIÓN TOTAL<br>TRIMBLE® S5</h1>
+                            <h2>Todo lo que necesita para realizar los proyectos de medición está disponible en la estación total robótica Trimble® S5.</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=1">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                    <div data-thumb="images/slides/thumbs/geosystem-slide8preview.jpg" data-src="images/slides/geosystem-slide8.jpg">
+                        <div class="camera_caption fadeFromBottom">
+                            <h1>RECEPTOR GNSS<br>SPECTRA PRECISION SP80</h1>
+                            <h2>Un receptor GNSS de última generación que combina décadas de  tecnología RTK GNSS con un nuevo y revolucionario procesamiento GNSS.</h2>
+                            <div class="btnBanner"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=2">Más Información</a></div>
+                            <span class="fondoBanner"></span>
+                        </div>
+                    </div>
+                </div><!-- #camera_wrap_1 -->
+            </div><!-- .fluid_container -->
+        </div>
+
+
+
+        <div class="contenedor">
+            <section class="gridBAR">
+                <div class="botonAccesoRapido" id="btn1">
+                    <a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=1">
+                        <img class="cruz" src="img/CruzAzul.png">
+                        <h1>Estaciones Totales</h1>
+                        <p>Rendimiento y confiabilidad.</p>
+                        <img class="cruzSelect1" src="img/CruzAmarilla.png">
+                    </a>               
+                </div>
+                <div class="botonAccesoRapido" id="btn2">
+                    <a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=2">
+                        <img class="cruz" src="img/CruzAzul.png">
+                        <h1>Sistema GNSS</h1>
+                        <p>Una solución inteligente con potencial tecnológico</p>
+                        <img class="cruzSelect2" src="img/CruzAmarilla.png">
+                    </a>               
+                </div>
+                <div class="botonAccesoRapido" id="btn3">
+                    <a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?id_categoria=3">
+                        <img class="cruz" src="img/CruzAzul.png">
+                        <h1>Sistemas Geoespaciales</h1>
+                        <p>Sistemas de imágenes espaciales más completo.</p>
+                        <img class="cruzSelect3" src="img/CruzAmarilla.png">
+                    </a>               
+                </div>
+                <div class="botonAccesoRapido" id="btn4">
+                    <a href="http://www.geosystemsperu.com/productos/accesorios/accesorios.html">
+                        <img class="cruz" src="img/CruzAzul.png">
+                        <h1>Accesorios</h1>
+                        <p>La mejor calidad del mercado</p>
+                        <img class="cruzSelect4" src="img/CruzAmarilla.png">
+                    </a>               
+                </div>
+            </section>
+            <section class="gridContenido">
+                <article class="formulario">
+                    <form id="formdata" method="POST">
+                        <h4>CONTÁCTENOS</h4>
+                        <input id="txtNombre" name="nombre" class="cajonesForm" type="text" placeholder="Nombre y Apellido">
+                        <input id="txtEmpresa" name="empresa" class="cajonesForm" type="text" placeholder="Empresa">
+                        <input id="txtRuc" name="ruc" class="cajonesForm" type="text" placeholder="RUC">
+                        <input id="txtTelf" name="telf" class="cajonesForm" type="text" placeholder="Teléfono">
+                        <input id="txtCorreo" name="correo" class="cajonesForm" type="text" placeholder="Correo electrónico">
+                        <textarea id="txtMensaje" name="mensaje" class="cajonesFormB" rows="6" cols="27" placeholder="Mensaje..."></textarea>
+                        <input id="boton" type="button" class="botonForm"  value="Enviar">
+                    </form>
+                </article>
+                <article class="accesosIndustrias">
+
+
+                    <!-- Aca va el slider de resumenes-->
+                
+                    <div id="ca-container" class="ca-container">
+                        <div class="ca-wrapper">
+                        <!--
+                            <div class="ca-item ca-item-1">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://localhost/productos/catalogo/equipos.php?variable=1">
+                                        <div class="ca-icon"></div>
+                                        <h3>TOPOGRAFIA Y GEODESIA</h3>
+                                        <h4>
+                                            <span class="textosDescrip">Al combinar la tecnología de vanguardia, integración de datos y soporte permanente durante todo el ciclo de vida de los proyectos, nos permite ofrecer el aumento de la productividad a los topógrafos mejorando el flujo de trabajo, capacidades de colaboración entre el campo y la oficina, tomar decisiones bien informadas en el lugar y en el momento que se requiera.  Desde soluciones GNSS, escaneo, tecnología óptica, software de procesamiento, modelado y análisis de los datos capturados, ofrecemos soluciones completas para el desafío en el campo de la topografía y geodesia de hoy.</span>
+                                        </h4>
+                                           <a href="#" class="ca-more">< ver más ></a>
+                                            
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ca-item ca-item-2">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=5">
+                                        <div class="ca-icon"></div>
+                                        <h3>MONITOREO</h3>
+                                        <h4>
+                                            <span class="textosDescrip">Asegurar la integridad de la presa, mina u otra estructura del medio ambiente es fundamental para el éxito de su negocio y la seguridad de su proyecto. No importa el tamaño, nuestras soluciones de monitoreo escalables se pueden personalizar para satisfacer una variedad de requisitos del proyecto de medición de la deformación, sea mediante el post-procesamiento o en tiempo real.</span>
+                                        </h4>
+                                            <a href="#" class="ca-more">< ver más ></a>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="ca-item ca-item-3">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=4">
+                                        <div class="ca-icon"></div>
+                                        <h3>ARQUITECTURA</h3>
+                                        <h4>
+                                            <span class="textosDescrip">Mediante la captura de datos de las estructuras, del vacío, del espacio envuelto y del espacio interior de forma 3 dimensional podemos visualizar y analizar en detalle el entorno de manera virtual.  Con las Soluciones de Trimble se pueden documentar ampliamente las estructuras para la conservación o renovación.  Con datos digitales altamente detallados y visuales, se puede extraer la información requerida con metodologías modernas, manteniendo la integridad del pasado histórico.</span>
+                                        </h4>
+                                            <a href="#" class="ca-more">< ver más ></a>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="ca-item ca-item-4">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=3">
+                                        <div class="ca-icon"></div>
+                                        <h3>CONSTRUCCIÓN</h3>
+                                        <h4>
+                                            <span class="textosDescrip">La combinación de tecnologías de hardware, software y movilidad agiliza la comunicación y la colaboración en todo el ciclo de vida de la construcción, desde la planificación, el diseño y la preparación del terreno hasta el proyecto terminado.  Nuestras soluciones mejoran los flujos de trabajo entre los actores clave donde quiera que se encuentren, y hacer más fácil el seguimiento de tiempo, costos, materiales, personal y recursos. Le ofrecemos soluciones que le ayuda a construir proyectos más inteligentes, más precisos y más rentables.</span>
+                                        </h4>
+                                            <a href="#" class="ca-more">< ver más ></a>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="ca-item ca-item-5">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=2">
+                                        <div class="ca-icon"></div>
+                                        <h3>AGRICULTURA</h3>
+                                        <h4>
+                                            <span class="textosDescrip">Nuestras tecnologías y soluciones son probadas para funcionar de manera eficiente, ahorrar en costos de los insumos, y mejorar el rendimiento de los cultivos y la productividad con el fin de tomar las mejores decisiones para sus operaciones de los cultivos temporada tras temporada, año tras año.   No importa el tipo de cultivo, o de la magnitud del terreno, tenemos una solución para satisfacer sus necesidades en el campo de la agricultura de precisión.  </span>
+                                        </h4>
+                                            <a href="#" class="ca-more">< ver más ></a>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="ca-item ca-item-6">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=6">
+                                        <div class="ca-icon"></div>
+                                        <h3>MINERIA</h3>
+                                        <h4>
+                                            <span class="textosDescrip">El aumento de la eficiencia y los costos de operación de control son los principales factores en la minería rentable. Información geoespacial precisa y fiable para mejorar la eficiencia, reducir la repetición del trabajo, aumentar la seguridad y la implementación de tecnologías autónomas ayuda a los gerentes de la mina a reducir los costos de operación para cumplir con los objetivos de rentabilidad.</span>
+                                        </h4>
+                                            <a href="#" class="ca-more">< ver más ></a>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="ca-item ca-item-7">
+                                <div class="ca-item-main">
+                                    <a class="wrapperLinkCarrusel" href="http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=7">
+                                        <div class="ca-icon"></div>
+                                        <h3>MEDIO AMBIENTE</h3>
+                                        <h4>
+                                            <span class="textosDescrip">En la industria del medio ambiente y los residuos, los beneficios de la empresa se logran minimizando los gastos operativos y maximizando la eficacia de los recursos. La seguridad y el cumplimiento de la normativa de la industria también presentan desafíos a este sector. Mediante tecnología que ofrecemos, podemos ayudarle a asegurar que los procesos de recolección y eliminación de residuos sean altamente productivos.</span>
+                                        </h4>
+                                            <a href="#" class="ca-more">< ver más ></a>
+                                    </a>
+                                </div>
+                                
+                            </div>-->
+                            
+                        </div>
+                    </div>
+                                                    
+                    <!-- FIN DEL PLUGIN -->
+
+
+                </article>
+                <article class="accesosExtras">
+                    <div id="wrapperInsercion" class="botonAccesoExtras">
+                        <!--<a href="http://www.geosystemsperu.com/novedades/novedades.html">
+                            <h5>NOVEDADES Y NOTICIAS</h5>
+                            <span>
+                                <figure>
+                                    <img src="img/novedadesnoticias.jpg">
+                                </figure>
+                                <h3>Titulo de la noticia</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a galley of type.</p>
+                            </span>
+                        </a>-->
+                    </div>
+                    <div class="botonAccesoExtras">
+                        <a href="http://www.geosystemsperu.com/servicios/catalogo_servicios/catalogo_servicios.php?id_servicio=1">
+                            <h5>SERVICIO TÉCNICO</h5>
+                            <span class="wrapperContenidoNoticiaTotal">
+                                <figure>
+                                    <img src="img/geosystems-serviciotec-foto.jpg">
+                                </figure>
+                                <span class="wrapperContenidoServicio">
+                                    <h3>Servicio técnico oficial</h3>
+                                    <p class="textosDescrip">Geo Systems S.A.C. posee un laboratorio especializado en servicio técnico óptico-electrónico oficial de Trimble con certificación Level 3, para la reparación, calibración y verificación de instrumentos topográficos Trimble, como también instrumentos de las marcas Spectra Precision, Nikon y Pentax, entre otros.</p>
+                                    
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+
+    <!-- ACABA EL CUERPO -->
+
+
+
+        <footer>
+            <div class="foot1">
+                <ul>
+                    <li class="botonesFootP">
+                        <p><a href="http://www.geosystemsperu.com/nosotros/nosotros.html">NOSOTROS</a></p>
+                        <ul>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/nosotros/nosotros.php?id_nosotros=1">Acerca de Nosotros</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/nosotros/nosotros.php?id_nosotros=2">Nuestra Misión y Visión</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/nosotros/nosotros.php?id_nosotros=5">Certificaciones</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/nosotros/nosotros.php?id_nosotros=6">Representaciones Autorizadas</a></li>
+                        </ul>
+                    </li>
+                    <li class="botonesFootP">
+                        <p><a href="http://www.geosystemsperu.com/productos/productos.html">PRODUCTOS</a></p>
+                        <ul>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/productos/marcas/marcas.html">Marcas Representadas</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/productos/catalogo/equipos.php">Equipos</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/productos/accesorios/accesorios.html">Accesorios</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/productos/promociones/promociones.html">Promociones</a></li>
+                        </ul>
+                    </li>
+                    <li class="botonesFootP">
+                        <p><a href="http://www.geosystemsperu.com/servicios/servicio.html">SERVICIOS</a></p>
+                        <ul>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/servicios/catalogo_servicios/catalogo_servicios.php?id_servicio=1">Servicio Técnico</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/servicios/servicio.html">Garantías</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/servicios/catalogo_servicios/catalogo_servicios.php?id_servicio=3">Alquileres</a></li>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/servicios/catalogo_servicios/catalogo_servicios.php?id_servicio=4">Servicios de Topografía</a></li>
+                        </ul>
+                    </li>
+                    <li class="botonesFootP">
+                        <p><a href="#">SOLUCIONES</a></p>
+                        <ul id="footersubNavSoluciones">
+                            <!--<li class="botonMarcas"><a href="http://localhost/productos/catalogo/equipos.php?variable=1">Mapping</a></li>
+                            <li class="botonMarcas"><a href="http://localhost/productos/catalogo/equipos.php?variable=5">Monitoreo</a></li>
+                            <li class="botonMarcas"><a href="http://localhost/productos/catalogo/equipos.php?variable=4">Arquitectura</a></li>
+                            <li class="botonMarcas"><a href="http://localhost/productos/catalogo/equipos.php?variable=3">Construcción</a></li>
+                            <li class="botonMarcas"><a href="http://localhost/productos/catalogo/equipos.php?variable=2">Agricultura</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="botonesFootP">
+                        <p><a href="http://www.geosystemsperu.com/soporte/soporte.html">SOPORTE</a></p>
+                        <ul>
+                            <li class="botonMarcas"><a href="http://www.geosystemsperu.com/soporte/soporte.html">Manuales y Guias</a></li>
+                        </ul>
+                    </li>
+                    <li class="botonesFootP">
+                        <p><a href="#">PRINCIPALES MARCAS</a></p>
+                        <ul>
+                            <li>
+                                <a href="http://www.trimble.com/"><img src="img/TrimbleComercial.png"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.spectraprecision.com/"><img src="img/SpectraComercial.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/PentaxComercial.png"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="wrapperCertificaciones">
+                    <div>
+                        <a target="_blank" href="http://www.geosystemsperu.com/nosotros/certificados/Certificado_SGS_ISO9001_Grupo_Geo.pdf"><img src="img/ISO-9001.png"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://www.geosystemsperu.com/nosotros/certificados/Certificado_SGS_ISO14001_Grupo_Geo_09_03_2015.pdf"><img src="img/ISO-14001.png"></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="http://www.geosystemsperu.com/nosotros/certificados/Certificado_SGS_OHSAS18001_Grupo_Geo_09_03_2015.pdf"><img src="img/OHSAS-18001.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <div class="gridFoot2">
+                    <div class="pieGeo">
+                        <p>TODOS LOS DERECHOS RESERVADOS ® </p>
+                        <img src="img/LogotipoGeo.png">
+                    </div>
+                    <div class="gridRedes">
+                        <p>ACOMPAÑANOS EN</p>
+                        <ul class="botoneraRedes">
+                            <li>
+                                <figure id="btn5">
+                                    <a target="_blank" href="https://www.facebook.com/geosystemsperu/">
+                                        <img class="icoFb" src="img/facebook01.png" alt="Hazte fan en Nuestro Fanpage">
+                                        <img class="icoFbcolor" src="img/facebook02.png">
+                                    </a>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure id="btn6">
+                                    <a target="_blank" href="https://twitter.com/geosystemperu">
+                                        <img class="icoT" src="img/Twitter01.png" alt="Siguenos en twitter">
+                                        <img class="icoTcolor" src="img/Twitter02.png" alt="Siguenos en twitter">
+                                    </a>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure id="btn7">
+                                    <a href="#">
+                                        <img class="icoL" src="img/Linkedin01.png" alt="Siguenos en twitter">
+                                        <img class="icoLcolor" src="img/Linkedin02.png" alt="Siguenos en twitter">
+                                    </a>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure id="btn8">
+                                    <a href="#">
+                                        <img class="icoY" src="img/Youtube01.png" alt="Siguenos en twitter">
+                                        <img class="icoYcolor" src="img/Youtube02.png" alt="Siguenos en twitter">
+                                    </a>
+                                </figure>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footDirec">
+                <div class="gridFootDirec" id="direc1">
+                    <p class="tituloFootDirec">Geo Systems - Lima</p>
+                    <p class="contentFootDirec">Av. Javier Prado Este 1402 | Urb. Corpac, San Isidro | Lima 027, Perú <br>PBX (51-1) 315 2910</p>
+                </div>
+                <div class="gridFootDirec" id="direc2">
+                    <p class="tituloFootDirec">Geo Systems - Arequipa</p>
+                    <p class="contentFootDirec">Calle Los Topacios I-19 urb. Los Ángeles, Arequipa<br>PBX (51-54) 213864</p>
+                </div>
+            </div>
+            <div class="foot3">
+                <div class="gridFoot3">
+                    <a href="http://www.plaqart.com">
+                        <img src="img/PlaqartCredito.png" alt="Agencia de diseño y desarrollo web">
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="mensajeForm" id="mensajeExito">
+            <p>Gracias por su preferencia. En los próximos días un ejecutivo se podrá en contacto.</p>
+        </div>
+        <div class="mensajeForm" id="mensajeError">
+            <p>Lo sentimos hubo un error de conexión, intentelo nuevamente.</p>
+        </div>
+        
+    </div>
+
+
+    <script type="text/template" id="btnNoticiaHome">
+
+
+    <%_.each(conexionTemplate, function(variable){
+        var rutaImg = "./novedades/" + variable.img
+    %>
+        <a href="http://www.geosystemsperu.com/novedades/novedades.html">
+            <h5>NOVEDADES Y NOTICIAS</h5>
+            <span class="wrapperContenidoNoticiaTotal">
+                <figure>
+                    <img src=<%= rutaImg %>>
+                </figure>
+                <span class="wrapperContenidoNoticia">
+
+                    <h3><%= variable.titular %></h3>
+                    <p class="contenidoBtnNoticiasHome"> <%= variable.contenido %></p>
+                </span>
+            </span>
+        </a>    
+    <%});%>
+    </script>
+
+
+    <script type="text/template" id="templateBtnSoluciones">
+
+    <%_.each(conexionTemplate, function(variable){
+        var rutaSolucion = "http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=" + variable.id_industria;
+        var solucion = variable.nombre.toUpperCase();
+    %>
+        
+        <li class="botonesS"><a href=<%= rutaSolucion %>><%= solucion %></a></li>
+            
+    <%});%>
+    </script>
+
+    <script type="text/template" id="templateFooterBtnSoluciones">
+
+    <%_.each(conexionTemplate, function(variable){
+        var rutaSolucion = "http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=" + variable.id_industria;
+        var solucion = variable.nombre;
+    %>
+
+        <li class="botonMarcas"><a href=<%= rutaSolucion %> style="text-transform:capitalize;"><%= solucion %></a></li>
+            
+    <%});%>
+    </script>
+
+    <script type="text/template" id="templateVinetaCarrusel">
+
+    <%_.each(conexionTemplate, function(variable){
+        var rutaSolucion = "http://www.geosystemsperu.com/productos/catalogo/equipos.php?variable=" + variable.id_industria;
+        var solucion = variable.nombre.toUpperCase();
+        var descripcion = variable.descripcion;
+        var claseItemPlugin = "ca-item ca-item-" + variable.id_industria.toString();
+    %>
+
+    <div class="<%= claseItemPlugin %>">
+        <div class="ca-item-main">
+            <a class="wrapperLinkCarrusel" href=<%= rutaSolucion %>>
+                <div class="ca-icon"></div>
+                <h3><%= solucion %></h3>
+                <h4>
+                    <span class="textosDescrip"><%= descripcion %></span>
+                </h4>
+                    <!--<a href="#" class="ca-more">< ver más ></a>-->
+                    
+            </a>
+        </div>
+    </div>
+        
+            
+    <%});%>
+    </script>
+
+
+
+    <script src="js/main.js"></script>
+
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.contentcarousel.js"></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+
+    <script type="text/javascript">
+        $('#ca-container').contentcarousel({
+
+            // speed for the sliding animation
+            sliderSpeed     : 500,
+            // easing for the sliding animation
+            sliderEasing    : 'easeOutExpo',
+            // speed for the item animation (open / close)
+            itemSpeed       : 500,
+            // easing for the item animation (open / close)
+            itemEasing      : 'easeOutExpo',
+            // number of items to scroll at a time
+            scroll          : 1 
+
+        });
+
+        
+    </script>
+    <!-- GOOGLE Analitycs Code-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-77814153-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</body> 
+</html>

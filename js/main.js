@@ -92,4 +92,43 @@ $(document).ready(function(){
 		}, 1000);
 
 	}
+/*
+	if(screen.width < 769){
+		$(".galleryGrid").click(function(){
+
+		})
+	}
+*/
+	let pagFlag = 0;
+
+	$("#btnCarruselForward").click(function(){
+		if( pagFlag < 2){
+			console.log(pagFlag)
+			$(".wrapperThumb").animate({
+				left : "-=100%"
+			}, 1000, function(){
+				pagFlag += 1;
+
+			});
+		}else{
+			console.log("ya no se avanza")
+			pagFlag = 0;
+			$(".wrapperThumb").animate({
+				left : "+=200%"
+			}, 1000);
+		}
+		
+	});
+
+	$("#btnCarruselBack").click(function(){
+		if(pagFlag >0){
+			$(".wrapperThumb").animate({
+				left : "+=100%"
+			}, 1000, function(){
+				pagFlag -= 1;
+
+			});
+		}
+	
+	});
 });

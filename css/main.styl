@@ -447,6 +447,37 @@ textarea {
 	span
 		font-size 4em
 		color #95989A
+		
+.collectionList, .collectionListMobileV
+	display none
+	ul
+		display block
+		width 100%
+		list-style none
+		margin 0px
+		padding 20px 0px
+		li
+			width 100%
+			a
+				display block
+				text-decoration none
+				font-family "Open sans"
+				font-size 2em
+				font-weight lighter
+				color #95989A
+				text-align center
+				margin 10px auto
+				padding 0px
+				width 100%
+				
+		.collectionSelected
+			a
+				color black
+			a:before
+				content:"·"
+				color black
+				position relative
+				right 10px
 				
 body
 	border none
@@ -464,6 +495,7 @@ body
 		top 0px
 		z-index 9999
 		background-color white
+		border-bottom solid 1px #A5A5A5
 		
 		.navHeader
 			display flex
@@ -550,37 +582,6 @@ body
 	.sectionCollections
 		position relative
 			
-		.collectionList
-			display none
-			ul
-				display block
-				width 100%
-				list-style none
-				margin 0px
-				padding 20px 0px
-				li
-					width 100%
-					a
-						display block
-						text-decoration none
-						font-family "Open sans"
-						font-size 2em
-						font-weight lighter
-						color #95989A
-						text-align center
-						margin 10px auto
-						padding 0px
-						width 100%
-						
-				.collectionSelected
-					a
-						color black
-					a:before
-						content:"·"
-						color black
-						position relative
-						right 10px
-						
 		.gallery
 			position relative
 			height 510px
@@ -608,36 +609,59 @@ body
 				
 		.icoImage
 			display none
-			font-size 3em
+			font-size 1.5em
 			color #95989A
 			background-color white
-			height 80px
-			width 80px
-			line-height 80px
+			height 50px
+			width 50px
+			line-height 50px
 			text-align center
-			border solid 1px red
 			border-radius 50%
 			position absolute
 			bottom 230px
-			right 30px
-			
+			right 20px
+			z-index 9999
+			cursor pointer
+			box-shadow 1px 1px 7px #95989A
 			
 				
 	.sectionLifestyle
-		.carrusel
-			margin 0px 0px 20px 0px
+		.wrapperCarrusel
+			margin 0px auto 20px auto
+			position relative
+			overflow hidden
+			width 95%
 			display flex
-			flex-wrap wrap
-			justify-content space-around
-			align-content space-around 
 			
-			.thumb
-				width 47%
-				margin 10px 0px
-				padding 0px
 				
-				img
-					width 100%
+			.btnCarrusel
+				width 20px
+				font-size 3em
+				width 5%
+				margin auto 0px
+				color #95989A
+			
+			.carrusel
+				display block
+				overflow hidden
+				width 95%
+				
+				.wrapperThumb
+					display flex
+					flex-wrap wrap
+					justify-content space-around
+					align-content space-around
+					width 300%
+					position relative
+					left 0px
+								
+					.thumb
+						width 15%
+						margin 10px 0px
+						padding 0px
+						
+						img
+							width 100%
 			
 	.sectionAboutus
 		margin 100px 0px 0px 0px
@@ -695,7 +719,45 @@ body
 						font-size 1.8em
 						
 
+	.sectionShowcaseCollection
+		margin-top 60px
+		padding 40px 55px 0px 55px
+		
+		.wrapperImages
+			display flex
+			flex-wrap wrap
+			justify-content center
+			align-items flex-start
+			align-content stretch
+			
+			figure
+				border solid 1px red
+				display block
+				margin 0px
+				padding 0px
+				height 200px
+				
+				img
+					width 100%
+					
+			.dimT, .dimA, .dimB, .dimC
+				width 100%
+			
+			
+
 @media screen and (min-width: 1200px)
+	body .sectionCollections .icoImage
+		display block
+		
+	body .sectionShowcaseCollection .wrapperImages 
+		.dimT
+			width 300px
+		.dimA
+			width 250px
+		.dimB
+			width 600px
+		.dimC
+			width 500px
 
 	.headSection
 		width 100%
@@ -704,6 +766,19 @@ body
 		h4
 			font-size 3em
 			margin-left 30px
+		span
+			display none
+			
+	.collectionList
+		width 200px
+		display block
+		ul
+			padding 0px
+			width 200px
+			li a
+				font-size 0.8em
+				text-align left
+				
 
 	body 
 		header
@@ -746,20 +821,14 @@ body
 				span
 					display none
 					
-			.collectionList
-				width 200px
-				display block
-				ul
-					padding 0px
-					width 200px
-					li a
-						font-size 0.8em
-						text-align left
+			
 			.gallery
 				width 900px
 		
-		.sectionLifestyle .carrusel .thumb 
-			width 30%
+		.sectionLifestyle .wrapperCarrusel .btnCarrusel
+			cursor pointer	
+		.sectionLifestyle .wrapperCarrusel .carrusel .wrapperThumb .thumb
+			width 11%
 					
 		.sectionAboutus
 			width 1150px
